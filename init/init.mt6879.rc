@@ -383,6 +383,12 @@ on boot
     # gauge symbolic
     symlink /sys/devices/platform/11ed1000.i2c/i2c-5/5-0034/11ed1000.i2c:mt6375@34:mtk_gauge /dev/gauge
 
+    # Allow system to manipulate HBM and DC Dimming nodes
+    chown system system /sys/devices/platform/14017000.dsi/hbm
+    chmod 0660 /sys/devices/platform/14017000.dsi/hbm
+    chown system system /sys/devices/platform/14017000.dsi/dc
+    chmod 0660 /sys/devices/platform/14017000.dsi/dc
+
     # Allow system to change fast charging current node
     chown system system /sys/devices/platform/soc/soc:odm/soc:odm:mmi_chrg_manager/power_supply/mmi_chrg_manager/constant_charge_current_max
     chmod 0660 /sys/devices/platform/soc/soc:odm/soc:odm:mmi_chrg_manager/power_supply/mmi_chrg_manager/constant_charge_current_max

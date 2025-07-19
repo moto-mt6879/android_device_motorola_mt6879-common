@@ -152,6 +152,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2023-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     frameworks/native/data/etc/android.software.opengles.deqp.level-2023-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml
 
+# DisplayFeatures
+PRODUCT_PACKAGES += \
+    DisplayFeatures
+
 # DRM (Clearkey)
 PRODUCT_PACKAGES += \
     com.android.hardware.drm.clearkey
@@ -226,6 +230,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
+    DisplayFeaturesOverlayMT6879 \
     FrameworkOverlayMT6879 \
     SettingsOverlayMT6879 \
     SystemUIOverlayMT6879 \
