@@ -311,7 +311,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH) \
     hardware/google/pixel \
     hardware/google/interfaces \
-    hardware/motorola \
     hardware/mediatek/libmtkperf_client \
     hardware/mediatek/libaedv \
     hardware/mediatek
